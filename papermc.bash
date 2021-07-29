@@ -27,8 +27,11 @@ if [ "$1" = "get" ]; then
 
 		download="$(curl -X GET "https://papermc.io/api/v2/projects/paper/versions/$mcver/builds/$build" -H "accept: application/json" | jq -r ".downloads.application.name")"
 
-		curl -X GET "https://papermc.io/api/v2/projects/paper/versions/$mcver/builds/$build/downloads/$download" -H "accept: application/java-archive" -o paperclip.jar
-
+		if [ -t 1 ]; then
+			curl -X GET "https://papermc.io/api/v2/projects/paper/versions/$mcver/builds/$build/downloads/$download" -H "accept: application/java-archive" -o paperclip.jar
+		else
+			curl -X GET "https://papermc.io/api/v2/projects/paper/versions/$mcver/builds/$build/downloads/$download" -H "accept: application/java-archive"
+		fi
 	fi
 fi
 
