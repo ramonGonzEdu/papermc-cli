@@ -33,3 +33,4 @@ ln -s $(pwd)/papermc.bash /usr/local/bin/papermc
 # Copy it to the folder
 cp ./papermc.bash ~/.local/bin/papermc
 cp ./papermc.bash /usr/local/bin/papermc
+```
