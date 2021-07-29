@@ -1,6 +1,10 @@
 # PaperMC
 A cli tool written in bash meant to be used to download papermc files. (This project is free to use for anyone, but credit is nice. MIT LICENSE)
 
+## Requirements
+Requires the cli tool `jq` to be installed for the json manipulation.
+Requires `curl` to be installed for making the api requests.
+
 ## Usage:
 ```bash
 
