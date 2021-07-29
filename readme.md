@@ -1,5 +1,5 @@
 # PaperMC
-A cli tool written in bash meant to be used to download papermc files.
+A cli tool written in bash meant to be used to download papermc files. (This project is free to use for anyone, but credit is nice. MIT LICENSE)
 
 ## Usage:
 ```bash
