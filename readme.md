@@ -1,6 +1,10 @@
 # PaperMC
 A cli tool written in bash meant to be used to download papermc files. (This project is free to use for anyone, but credit is nice. MIT LICENSE)
 
+## Requirements
+Requires the cli tool `jq` to be installed for the json manipulation.
+Requires `curl` to be installed for making the api requests.
+
 ## Usage:
 ```bash
 
@@ -19,3 +23,14 @@ A cli tool written in bash meant to be used to download papermc files. (This pro
 The tool automatically decides whether to save the jar to a file or print it to stdout depending on if its piped. (`if [ -t 1 ];`)
 
 This allows you to automatically download the latest version of papermc like in the v1 of the api, but with the new v2 api.
+
+## Installation:
+```bash
+# Link it to where the github repo is cloned
+ln -s $(pwd)/papermc.bash ~/.local/bin/papermc
+ln -s $(pwd)/papermc.bash /usr/local/bin/papermc
+
+# Copy it to the folder
+cp ./papermc.bash ~/.local/bin/papermc
+cp ./papermc.bash /usr/local/bin/papermc
+```
